@@ -1,29 +1,29 @@
 # Quad Trees vs R-Trees: Performance Comparison for Geospatial Data
 
-### MSc Data Science & Engineering · Complex Data Management Course · Project 4/4:  Quad Trees vs R-Trees
+### MSc Data Science & Engineering · Complex Data Management Course · Project 4/4: Quad Trees vs R-Trees
 
-## Project Overview
+## Overview
 
-This project implements and comprehensively compares two spatial data structures - Quad Trees and R-Trees - for efficient handling of geospatial data. The implementation includes optimized algorithms for range queries and k-nearest neighbor (k-NN) searches, with extensive performance analysis on real-world geographic datasets.
+This project implements and comprehensively compares two spatial data structures in C++, Quad Trees and R-Trees, for efficient handling of geospatial data. The implementation includes optimized algorithms for range queries and k-nearest neighbor (k-NN) searches, with extensive performance analysis on real-world geographic datasets.
 
 ## Project Structure
 
 ```
-├── src/                          # Source code directory
-│   ├── HeapEntry.h              # Priority queue structure for k-NN queries
-│   ├── Point.h & Point.cpp      # 2D point representation with distance calculations
+├── src/                            # Source code directory
+│   ├── HeapEntry.h                 # Priority queue structure for k-NN queries
+│   ├── Point.h & Point.cpp         # 2D point representation with distance calculations
 │   ├── Rectangle.h & Rectangle.cpp # Rectangle class for spatial boundaries
-│   ├── QuadTree.h & QuadTree.cpp # Quad Tree implementation
-│   ├── RTree.h & RTree.cpp      # R-Tree implementation with bulk loading
-│   └── (requires libmorton)     # External dependency for Z-order curves
-├── data_analysis.ipynb          # Analysis of USA datasets and query structures
-├── time_analysis.ipynb          # k-NN distribution analysis and performance insights
-├── time_knn.ipynb               # k-NN query time vs number of neighbors analysis
-├── range_times.ipynb            # Range query time vs query area analysis
-├── report_english.pdf           # Comprehensive project report in English
-├── report_greek.pdf             # Comprehensive project report in Greek
-├── presentation_english.pptx    # Project presentation slides in English
-└── presentation_greek.pptx      # Project presentation slides in Greek
+│   ├── QuadTree.h & QuadTree.cpp   # Quad Tree implementation
+│   ├── RTree.h & RTree.cpp         # R-Tree implementation with bulk loading
+│   └── (requires libmorton)        # External dependency for Z-order curves
+├── data_analysis.ipynb             # Analysis of USA datasets and query structures
+├── time_analysis.ipynb             # k-NN distribution analysis and performance insights
+├── time_knn.ipynb                  # k-NN query time vs number of neighbors analysis
+├── range_times.ipynb               # Range query time vs query area analysis
+├── report_english.pdf              # Comprehensive project report in English
+├── report_greek.pdf                # Comprehensive project report in Greek
+├── presentation_english.pptx       # Project presentation slides in English
+└── presentation_greek.pptx         # Project presentation slides in Greek
 ```
 
 ## Implementation Details
